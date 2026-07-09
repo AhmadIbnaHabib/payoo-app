@@ -31,31 +31,21 @@
                         <i class="fa-solid fa-battery-full text-black"></i>
                     </div>
                 </div>
-                <form class="flex flex-col justify-center items-center h-full">
-                    <div class="bg-[url('./assets/bg.png')] bg-cover w-[330px]
-                    h-[150px]">
-                    <div class="flex justify-center pt-7">
-                        <img src="./assets/Group.png" alt="">
+                <div class="flex justify-between items-center mt-5 pb-3 border-b-3 border-gray-300">
+                    <div class="flex">
+                        <img class="h-13" src="./assets/Group.png" alt="">
+                        <div>
+                            <h1 class="text-[20px] font-extrabold">$<span>45000</span></h1>
+                            <p class="text-[16px] font-semibold text-gray-500">Available Balance</p>
+                        </div>
                     </div>
-                    </div>
-                    <div class="w-full bg-white p-11 rounded-3xl">
-                        <label class="text-[18px] font-semibold" for="">Mobile Number</label>
-                        <br>
-                        <input id="mobile-number" type="text" placeholder="Enter your number"
-                            class="input input-ghost bg-[#F4F5F7] mt-3 mb-3 rounded-3xl text-[15px]" />
-                        <br>
-                        <label class="text-[18px] font-semibold" for="">4 Digit Pin</label>
-                        <br>
-                        <input id="pin-number" type="text" placeholder="Enter 4 Digit Pin"
-                            class="input input-ghost bg-[#F4F5F7] mt-3 mb-5 rounded-3xl text-[15px]" />
-                        <button id="login-btn"
-                            class="btn btn-wide max-w-full rounded-3xl border-none text-[18px] text-white bg-[#0874F2]">Login</button>
-                    </div>
-                </form>
+                    <button class="btn text-[18px] text-gray-500 rounded-xl"><i
+                            class="fa-solid fa-arrow-right-from-bracket rotate-180 text-gray-600"></i> Log Out</button>
+                </div>
             </div>
         </div>
     </div>
-    <script src="./script/script.js"></script>
+    <script src="./script/home.js"></script>
 </body>
 
 </html>
