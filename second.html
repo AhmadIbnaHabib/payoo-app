@@ -31,17 +31,92 @@
                         <i class="fa-solid fa-battery-full text-black"></i>
                     </div>
                 </div>
-                <div class="flex justify-between items-center mt-5 pb-3 border-b-3 border-gray-300">
-                    <div class="flex">
-                        <img class="h-13" src="./assets/Group.png" alt="">
-                        <div>
-                            <h1 class="text-[20px] font-extrabold">$<span>45000</span></h1>
-                            <p class="text-[16px] font-semibold text-gray-500">Available Balance</p>
+                <div>
+                    <div class="flex justify-between items-center mt-3 pb-3 border-b-3 border-gray-300">
+                        <div class="flex">
+                            <img class="h-13" src="./assets/Group.png" alt="">
+                            <div>
+                                <h1 class="text-[20px] font-extrabold">$<span id="available-balance">45000</span></h1>
+                                <p class="text-[16px] font-semibold text-gray-500">Available Balance</p>
+                            </div>
+                        </div>
+                        <button class="btn text-[18px] text-gray-500 rounded-xl"><i
+                                class="fa-solid fa-arrow-right-from-bracket rotate-180 text-gray-600"></i> Log
+                            Out</button>
+                    </div>
+                    <h1 class="text-[20px] font-extrabold mt-5">🔥 Welcome to Payooo!</h1>
+                    <p class="font-medium text-gray-500 mt-3">Enjoy easy and convenient financial services with us.
+                        Cashout charge is low and </p>
+                    <div class="grid grid-cols-3 mt-5 gap-3 justify-items">
+                        <div class="border border-gray-300 rounded-[10px] p-5 pt-3">
+                            <div class="flex justify-center">
+                                <img class="pb-1" src="./assets/wallet1.png" alt="">
+                            </div>
+                            <h1 class="text-center font-medium text-gray-600">Add Money</h1>
+                        </div>
+                        <div class="border border-gray-300 rounded-[10px] p-5 pt-3">
+                            <div class="flex justify-center">
+                                <img class="pb-1" src="./assets/send1.png" alt="">
+                            </div>
+                            <h1 class="text-center font-medium text-gray-600">Cashout</h1>
+                        </div>
+                        <div class="border border-gray-300 rounded-[10px] p-5 pt-3">
+                            <div class="flex justify-center">
+                                <img class="pb-1" src="./assets/money1.png" alt="">
+                            </div>
+                            <h1 class="text-center font-medium text-gray-600">Transfer</h1>
+                        </div>
+                        <div class="border border-gray-300 rounded-[10px] p-5 pt-3">
+                            <div class="flex justify-center">
+                                <img class="pb-1 mt-1" src="./assets/bonus1.png" alt="">
+                            </div>
+                            <h1 class="text-center font-medium text-gray-600">Get Bonus</h1>
+                        </div>
+                        <div class="border border-gray-300 rounded-[10px] p-5 pt-3">
+                            <div class="flex justify-center">
+                                <img class="pb-1" src="./assets/purse1.png" alt="">
+                            </div>
+                            <h1 class="text-center font-medium text-gray-600">Pay Bill</h1>
+                        </div>
+                        <div class="border border-gray-300 rounded-[10px] p-5 pt-3">
+                            <div class="flex justify-center">
+                                <img class="pb-1" src="./assets/transaction1.png" alt="">
+                            </div>
+                            <h1 class="text-center font-medium text-gray-600">Transactions</h1>
                         </div>
                     </div>
-                    <button class="btn text-[18px] text-gray-500 rounded-xl"><i
-                            class="fa-solid fa-arrow-right-from-bracket rotate-180 text-gray-600"></i> Log Out</button>
                 </div>
+                <h1 class="text-[18px] font-semibold my-5">
+                    Add Money
+                </h1>
+                <form>
+                    <div class="w-full bg-white p-5 rounded-3xl">
+                        <label class="text-[18px] font-semibold" for="">Select A Bank</label>
+                        <select class="select select-ghost w-full bg-[#F4F5F7] rounded-3xl mt-2 mb-2 text-[16px]  text-gray-500">
+                            <option disabled selected>Select Bank</option>
+                            <option>A Bank</option>
+                            <option>I Bank</option>
+                            <option>H Bank</option>
+                        </select>
+                        <br>
+                        <label class="text-[18px] font-semibold" for="">Bank Account Number</label>
+                        <br>
+                        <input id="bank-account" type="text" placeholder="Enter 11 digit account number"
+                            class="input input-ghost bg-[#F4F5F7] mt-2 mb-2 rounded-3xl text-[15px] w-full"/>
+                        <br>
+                        <label class="text-[18px] font-semibold" for="">Amount to Add</label>
+                        <br>
+                        <input id="add-amount" type="text" placeholder="Add Amount to withdraw"
+                            class="input input-ghost bg-[#F4F5F7] mt-2 mb-2 rounded-3xl text-[15px] w-full" />
+                        <br>
+                        <label class="text-[18px] font-semibold" for="">Pin Number</label>
+                        <br>
+                        <input id="pin-number" type="text" placeholder="Enter 4 digit pin number"
+                            class="input input-ghost bg-[#F4F5F7] mt-2 mb-5 rounded-3xl text-[15px] w-full" />
+                        <button id="add-money"
+                            class="btn btn-wide max-w-full rounded-3xl border-none text-[18px] text-white bg-[#0874F2]">Add Money</button>
+                    </div>
+                </form>
             </div>
         </div>
     </div>
